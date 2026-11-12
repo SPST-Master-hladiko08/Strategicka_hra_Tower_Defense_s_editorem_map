@@ -42,6 +42,7 @@ namespace TowerDefense
 
             // Propojení vykreslování s herním plátnem
             gameCanvas1.Paint += GameCanvas_Paint;
+            gameCanvas1.Resize += (s, e) => gameCanvas1.Invalidate();
         }
 
         private void SetupGameLoop()
@@ -105,6 +106,11 @@ namespace TowerDefense
         {
             Graphics g = e.Graphics;
             g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+
+            // Automatické přizpůsobení (škálování) obsahu plátna při změně velikosti okna
+            float scaleX = (float)gameCanvas1.Width / 800f;
+            float scaleY = (float)gameCanvas1.Height / 500f;
+            g.ScaleTransform(scaleX, scaleY);
 
             // Vykreslení testovací trasy
             if (mapPath.Count > 1)
