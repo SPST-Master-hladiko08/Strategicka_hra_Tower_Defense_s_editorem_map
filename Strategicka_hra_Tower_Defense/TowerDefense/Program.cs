@@ -16,7 +16,7 @@ namespace TowerDefense
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new gameCanvas());
+            Application.Run(new Form1());
         }
     }
 }

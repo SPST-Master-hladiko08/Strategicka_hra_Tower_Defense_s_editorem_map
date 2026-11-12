@@ -1,6 +1,6 @@
 ﻿namespace TowerDefense
 {
-    partial class gameCanvas
+    partial class Form1
     {
         /// <summary>
         /// Vyžaduje se proměnná návrháře.
@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.panelSidebar = new System.Windows.Forms.Panel();
-            this.lblLives = new System.Windows.Forms.Label();
-            this.lblMoney = new System.Windows.Forms.Label();
-            this.lblWave = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnFastTower = new System.Windows.Forms.Button();
             this.btnHeavyTower = new System.Windows.Forms.Button();
+            this.btnFastTower = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblWave = new System.Windows.Forms.Label();
+            this.lblMoney = new System.Windows.Forms.Label();
+            this.lblLives = new System.Windows.Forms.Label();
             this.gameCanvas1 = new TowerDefense.GameCanvas();
             this.panelSidebar.SuspendLayout();
             this.SuspendLayout();
@@ -54,25 +54,32 @@
             this.panelSidebar.Size = new System.Drawing.Size(220, 561);
             this.panelSidebar.TabIndex = 0;
             // 
-            // lblLives
+            // btnHeavyTower
             // 
-            this.lblLives.AutoSize = true;
-            this.lblLives.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblLives.Location = new System.Drawing.Point(3, 29);
-            this.lblLives.Name = "lblLives";
-            this.lblLives.Size = new System.Drawing.Size(86, 20);
-            this.lblLives.TabIndex = 0;
-            this.lblLives.Text = "Životy: 20";
+            this.btnHeavyTower.Location = new System.Drawing.Point(7, 114);
+            this.btnHeavyTower.Name = "btnHeavyTower";
+            this.btnHeavyTower.Size = new System.Drawing.Size(114, 23);
+            this.btnHeavyTower.TabIndex = 5;
+            this.btnHeavyTower.Text = "Silná věž (100 $)";
+            this.btnHeavyTower.UseVisualStyleBackColor = true;
             // 
-            // lblMoney
+            // btnFastTower
             // 
-            this.lblMoney.AutoSize = true;
-            this.lblMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblMoney.Location = new System.Drawing.Point(3, 9);
-            this.lblMoney.Name = "lblMoney";
-            this.lblMoney.Size = new System.Drawing.Size(118, 20);
-            this.lblMoney.TabIndex = 1;
-            this.lblMoney.Text = "Peníze: 150 $";
+            this.btnFastTower.Location = new System.Drawing.Point(7, 85);
+            this.btnFastTower.Name = "btnFastTower";
+            this.btnFastTower.Size = new System.Drawing.Size(114, 23);
+            this.btnFastTower.TabIndex = 4;
+            this.btnFastTower.Text = "Rychlá věž (50 $)";
+            this.btnFastTower.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(4, 69);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(68, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Stavba věží:";
             // 
             // lblWave
             // 
@@ -84,32 +91,25 @@
             this.lblWave.TabIndex = 2;
             this.lblWave.Text = "Vlna: 1";
             // 
-            // label4
+            // lblMoney
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(4, 69);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Stavba věží:";
+            this.lblMoney.AutoSize = true;
+            this.lblMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblMoney.Location = new System.Drawing.Point(3, 9);
+            this.lblMoney.Name = "lblMoney";
+            this.lblMoney.Size = new System.Drawing.Size(118, 20);
+            this.lblMoney.TabIndex = 1;
+            this.lblMoney.Text = "Peníze: 150 $";
             // 
-            // btnFastTower
+            // lblLives
             // 
-            this.btnFastTower.Location = new System.Drawing.Point(7, 85);
-            this.btnFastTower.Name = "btnFastTower";
-            this.btnFastTower.Size = new System.Drawing.Size(114, 23);
-            this.btnFastTower.TabIndex = 4;
-            this.btnFastTower.Text = "Rychlá věž (50 $)";
-            this.btnFastTower.UseVisualStyleBackColor = true;
-            // 
-            // btnHeavyTower
-            // 
-            this.btnHeavyTower.Location = new System.Drawing.Point(7, 114);
-            this.btnHeavyTower.Name = "btnHeavyTower";
-            this.btnHeavyTower.Size = new System.Drawing.Size(114, 23);
-            this.btnHeavyTower.TabIndex = 5;
-            this.btnHeavyTower.Text = "Silná věž (100 $)";
-            this.btnHeavyTower.UseVisualStyleBackColor = true;
+            this.lblLives.AutoSize = true;
+            this.lblLives.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblLives.Location = new System.Drawing.Point(3, 29);
+            this.lblLives.Name = "lblLives";
+            this.lblLives.Size = new System.Drawing.Size(86, 20);
+            this.lblLives.TabIndex = 0;
+            this.lblLives.Text = "Životy: 20";
             // 
             // gameCanvas1
             // 
